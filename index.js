@@ -153,7 +153,7 @@ function clearBtn() {
     let clear = document.createElement('div');
     clear.classList.add('tag', 'highlight');
     clear.id = 'clear';
-    clear.innerText = 'Clear x';
+    clear.innerText = 'X';
     clear.addEventListener('click', () => {
       selectedGenre = [];
       setGenre();
@@ -265,14 +265,15 @@ function openNav(movie) {
         <br/>
         ${youtubeTrailer}
         <br/>
-        <h2 class="no-results">Data de Lançamento</h2>
-        <span class="no-results" style="
+        <span
+       class="no-results" style="
           font-size: 1.2em;
           width: 40%;
           max-height: 100px;
           overflow-y: scroll;
-">${movie.release_date}
-<h2 class="no-results">Número de pessoas que o assistiram no cinema</h2>
+"> <h2 class="no-results">Data de Lançamento</h2>
+${movie.release_date}
+<h2 class="no-results">Ingressos Vendidos</h2>
 ${movie.popularity}
 <span class="no-results" style="
           font-size: 1.2em;
